@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron',sans-serif;
+}
+storeName{
+    font-size: 46px;
+    line-height: 54px;
+    color: rgb(39, 255, 244);
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: tomato;
+}
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: rgb(0, 0, 0);
+}
+h4 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+p {
+    font-size: 16px;
+    color:rgb(8, 8, 8);
+    margin: 15px 0 20px 0;
+}
+
+/* padding for sections */
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* HEADING  */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 15px 100px;
+    background: rgb(226, 149, 5);
+    box-shadow: 0 2px 2px rgb(183, 102, 3);
+    z-index: 999;
+    /* get to stay at top when scrolling */
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* get navbar choices in row */
+#navbar {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/* get navbar choices padding and no bullet point */
+#navbar li {
+    /*remove bullet points*/
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* customize navbar choices */
+#navbar li a{
+    /* remove underlines */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:black;
+    /* when hover - smoother */
+    transition: 0.3 ease;
+}
+
+/* Informative Feedback */
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(39, 255, 244);
+}
+
+/* Create underline with informative feedback */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 55%;
+    height: 1px;
+    background: rgb(39, 255, 244);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* HOME PAGE */
+
+/* hero */
+#hero {
+    background-image: url(Images/backgroundHome.png);
+    height: 90vh;
+    width: 100%;
+    background-size:cover;
+    background-position: top 40% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero button {
+    background-color: transparent;
+    color: orange;
+    padding: 14px 80px 14px 65px;
+    font-size: large;
+    font-weight: 900;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+/* FEATURED-ITEMS */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 375px;
+    text-align:center;
+    padding: 25px 15px;
+    box-shadow: 5px 5px 5px rgb(1, 1, 1);
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+/* hover effect */
+#feature .fe-box :hover {
+    transform: scale(1.05);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    margin-bottom: 10px;
+}
