@@ -166,3 +166,19 @@ body {
     width: 100%;
     margin-bottom: 10px;
 }
+
+#featuredProducts {
+    text-align: center;
+}
+
+#featuredProducts .products {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #000000;
+}
+
+#featuredProdcuts .products img {
+    width: 100%;
+    border-radius: 20px;
+}
